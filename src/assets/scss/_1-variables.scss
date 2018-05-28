@@ -1,0 +1,64 @@
+
+// The font size set on the root html element.
+$base-font-size: 16px !default;
+$font-size-lower: 14px; 
+$font-size-higher: 18px;
+
+// The base line height determines the basic unit of vertical rhythm.
+$base-line-height: 24px !default;
+
+// The length unit in which to output vertical rhythm values.
+// Supported values: px, em, rem.
+$base-unit: 'px' !default;
+
+// The default font family.
+$base-font-family:  "Georgia" ,"Times New Roman", Times, serif !default;
+$second-font-family: 'Quicksand', sans-serif;
+
+//Sizes
+$size-1: 8px;
+$size-2: 16px;
+$size-3: 24px;
+$size-4: 32px;
+$size-5: 42px;
+
+//Colors
+$color-main: #ff1b1b;
+$color-second: #fff;
+$color-nav: #000;
+
+
+// The font sizes for h1-h6.
+$h1-font-size: 2    * $base-font-size !default;
+$h2-font-size: 1.5  * $base-font-size !default;
+$h3-font-size: 1.17 * $base-font-size !default;
+$h4-font-size: 1    * $base-font-size !default;
+$h5-font-size: 0.83 * $base-font-size !default;
+$h6-font-size: 0.67 * $base-font-size !default;
+
+// The amount lists and blockquotes are indented.
+$indent-amount: 40px !default;
+
+
+////////////////////////
+// Grid Options
+///////////////////////
+$enable-grid-classes: true !default;
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1200px
+) !default;
+

@@ -1,0 +1,201 @@
+.heading-2 {
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #2e1e1e;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    text-shadow: 0 0.1rem 0.1rem $color-nav;
+    position: relative;
+
+    &:before,
+    &:after {
+        height: 35px;
+        width: 20px;
+        position: absolute;
+        content: '';
+        opacity: 0;
+    }
+
+    &:before {
+        right: 21px;
+        bottom: 0px;
+        border-right: 3px solid;
+        border-top: 3px solid;
+        border-bottom: 3px solid;
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    &:after {
+        left: 19px;
+        top: 3px;
+        border-top: 3px solid;
+        border-left: 3px solid;
+        border-bottom: 3px solid;
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+}
+
+.skills-header:before {
+    right: -15px;
+    bottom: 0px;
+}
+
+.skills-header:after {
+    left: -15px;
+}
+
+@media screen and (max-width: 350px) {
+
+    .skills-header {
+        width: 250px;
+        font-size: 1.8rem;
+    }
+
+
+    .skills-header:before {
+        right: -25px !important;
+        bottom: -2px !important;
+
+    }
+    .skills-header:after {
+        left: -15px !important;
+        top: 1px !important;
+
+    }
+    .icon-2 {
+        width: 230px;
+    }
+
+}
+
+.tech--content {
+    padding: 1rem;
+}
+
+.tech--icon {
+
+    width: 100px;
+    height: 100px;
+
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.tech--icon-2 {
+    width: 280px;
+    height: 100px;
+    margin: 20px 0;
+}
+
+
+#projects {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(4, 4, 105, 0.9)), to(rgba(4, 4, 105, 0.9))), url(../media/organic-tiles.png);
+    background: linear-gradient(to right, rgba(0, 1, 65, 0.9), rgba(22, 22, 106, 0.9)), url(../media/organic-tiles.png);
+    -webkit-transform: skew(0deg, 3deg);
+    transform: skew(0deg, 3deg);
+    margin-bottom: -50px;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    width: 100%;
+
+}
+
+.projects__header {
+    -webkit-transform: skew(0deg, -3deg);
+    transform: skew(0deg, -3deg);
+    color: #efefef;
+}
+
+.card-deck {
+    -webkit-transform: skew(0deg, -3deg);
+    transform: skew(0deg, -3deg);
+    padding: 30px;
+}
+
+
+.btn {
+    &--secondary {
+        display: block;
+        text-transform: uppercase;
+        background: none;
+        color: #1F1F5F;
+        width: 100px;
+        height: 40px;
+        border: 3px solid #1F1F5F;
+        font-size: 1.5rem;
+        font-weight: 600;
+        border-radius: 4px;
+        overflow: hidden;
+        letter-spacing: 1px;
+        margin: 2rem auto;
+        text-decoration: none !important;
+        text-align: center;
+        padding-top: 2px; 
+        
+        &:hover {
+            background-color: #1F1F5F;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+    }
+}
+
+
+#skills {
+    text-align: center;
+    margin: 30px 0 150px;
+    padding-top: 150px;
+}
+
+.card:hover {
+    -webkit-transform: translateY(-0.5rem) scale(1.01);
+    transform: translateY(-0.5rem) scale(1.01);
+    transition: all 0.2s ease-out;
+}
+
+#contact {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 244, 0, 0.9)), to(rgba(255, 244, 0, 0.9))), url(../media/topography.png);
+    background: linear-gradient(to right, rgba(255, 244, 0, 0.9), rgba(252, 244, 82, 0.8)), url(../media/topography.png);
+    padding: 15rem 0 !important;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.horizontal-rule__black {
+    background-color: $color-nav;
+    width: 20rem;
+    height: .15rem;
+}
+
+.contact__icon {
+    font-size: 60px;
+    padding: 1rem;
+    color: $color-nav;
+
+    &:hover {
+        color: #5a1f90;
+    }
+}
+
+
+
+.socials {
+    margin-top: 5rem;
+}
+
+
+.socials li {
+    display: inline-block;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Marek Krupski - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="shortcut icon" href="">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+
+    <nav class="nav">
+
+        <div class="nav__icon">
+
+            <i class="fa fa-bars fa-2x"></i>
+
+        </div>
+
+        <a href="#">
+            <div class="brand" onClick="window.location.reload()">
+                Marek Krupski
+            </div>
+        </a>
+
+        <div class="menu">
+            <ul>
+                <li class="nav__item"><a href="#top" class="nav__link scroll">Home</a></li>
+
+                <li class="nav__item"><a href="#skills" class="nav__link scroll">Umiejętności</a></li>
+
+                <li class="nav__item"><a href="#projects" class="nav__link scroll">Projekty</a></li>
+
+                <li class="nav__item"><a href="#contact" class="nav__link scroll">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <header class="header page-section" id="top">
+
+        <div class="header__promo-box col justify-content-center">
+
+            <div row-auto>
+                <h1 class="heading-1">
+                    <span class="heading-1__main">Marek Krupski</span></h1>
+            </div>
+            <div row-auto>
+                <h1 class="heading-1"><span class="heading-1__sub">Junior Front-End Developer</span>
+                </h1>
+            </div>
+            <div row-auto>
+                <hr class="horizontal-rule horizontal-rule__red">
+            </div>
+
+            <a href="mailto:marek.krupski@pollub.edu.pl"> <button  class="btn btn--primary">E-mail</button></a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <div class="container">
+
+            <section class="page-section" id="skills">
+
+                <h2 class="heading-2 skills-header">Umiejętności</h2>
+
+
+
+                <div class="tech row justify-content-center">
+
+                    <div class="col-auto"> <img class="tech--icon" src="./assets/media/html-5.png"> </div>
+
+                    <div class="col-auto"> <img class="tech--icon" src="./assets/media/css-3.png"> </div>
+
+                    <div class="col-auto"> <img class="tech--icon" src="./assets/media/java-script.png"> </div>
+                </div>
+
+                <div class="tech--content row justify-content-md-center">
+                    <p> Tworzę strony zgodne z semantyką standardu <strong> HTML 5 </strong> oraz dbam o czystość kodu. Dzięki stylom i animacjom stworzonym w <strong>CSS</strong> strona sprawia, że chcesz pozostać na niej dłużej. Tworzę responsywne layouty dzięki <strong> CSS grid</strong>, a stosowana przeze mnie metodologia <strong>BEM</strong> poprawia nie tylko czytelność kodu CSS, ale także HTML. W swoich projektach korzystam również z <strong>JavaScript</strong> oraz <strong>JQuery</strong>, jednak znajomość ich jest na nieco niższym poziomie niż wcześniej wymienione technologie. W wolnym czasie wciąż dąże do opanowania ich.</p>
+                    <p> Wiedzę czerpałem m. in. z tutoriali <i>pasja-informatyki</i> oraz ksiązek: <i>Duckett J. - HTML i CSS. Zaprojektuj i zbuduj witrynę WWW</i> ; <i>Freeman E. - Programowanie w JavaScript. Rusz głową!</i></p>
+                </div>
+
+                <div class="tech row justify-content-center">
+                    <div class="col-auto"> <img class="tech--icon" src="./assets/media/GIT.png"> </div>
+                    <div class="col-auto"> <img class="tech--icon" src="./assets/media/sass.png"> </div>
+                    <div class="col-auto"> <img class="tech--icon" src="./assets/media/bootstrap.png"> </div>
+                </div>
+
+                <div class="tech--content row justify-content-md-center">
+                    <p>
+                        W tworzeniu responsywnych projektów pomaga mi framework <strong>Bootstrap</strong>. Moją pracę przyspiesza również preprocesor <strong>SASS</strong>, dzięki czemu struktura dużych projektów jest czytelna. Korzystam także z systemu kontroli wersji <strong>GIT</strong>.</p>
+                    <p>Umiejętności zdobyłem dzięki kursom Udemy - <i>Advanced CSS and Sass: Flexbox, Grid, Animations and More.</i>, dokumentacji oraz innym ogólno dostępnym tutorialom.</p>
+
+                </div>
+                <div class="tech row justify-content-center">
+                    <div class="col-auto"> <img class="tech--icon" src="./assets/media/webpack.png"></div>
+                    <div class="col-auto"> <img class="tech--icon-2" src="./assets/media/node-npm.png"></div>
+                </div>
+
+                <div class="tech--content row justify-content-md-center">
+                    <p>W utrzymaniu porządku pomaga mi również narzędzie jakim jest webpack oraz menadżer pakietów NPM.</p>
+                </div>
+            </section>
+        </div>
+
+
+        <section class="projects content page-section" id="projects">
+
+            <h2 class="heading-2 projects__header">Projekty</h2>
+
+            <div class="card-deck container-fluid">
+
+                <div class="card">
+                    <img class="card-img" src="./assets/media/rece.png" alt="porfolio-img">
+                    <div class="card-body">
+                        <h4 class="card-title">Portfolio</h4>
+                        <p class="card-text">Strona - wizytówka. W skrócie przedstawia moje umiejętności i projekty. Daje możliwość skontaktowania się ze mną oraz odwiedzenia moich social media.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success text-success">
+                        <a href="https://github.com/mKrupski/portfolio" target="_blank" class="btn btn--secondary">kod</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img" src="./assets/media/nexter.jpg" alt="nexter-img">
+                    <div class="card-body">
+                        <h4 class="card-title">Nexter</h4>
+                        <p class="card-text">Landing page dla zmyślonej firmy zajmującej się sprzedażą luksusowych domów. Projekt miał wykorzystywać możliwie najwięcej css grid w celu nauki RWD. Strona wykonana w ramach kursu "Advanced CSS Course" z Udemy.com.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success text-success">
+                        <a href="https://github.com/mKrupski/nexter" target="_blank" class="btn btn--secondary">kod</a></div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img" src="./assets/media/hangman.png" alt="hangman-img">
+                    <div class="card-body">
+                        <h4 class="card-title">Wisielec</h4>
+                        <p class="card-text">Gra wisielec. Wykonana w Java Script na podstawie tutorialu Pasja Informatyki.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success text-success">
+                        <a href="https://github.com/mKrupski/hangman" target="_blank" class="btn btn--secondary">kod</a>
+                        <a href="https://mkrupski.github.io/hangman/" target="_blank" class="btn btn--secondary">LIVE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact page-section" id="contact">
+
+            <h2 class="heading-2 contact__header">Kontakt</h2>
+            <hr class="horizontal-rule horizontal-rule__black">
+
+            <ul class="row-list socials">
+                <li class="row-list-item"> <a href="https://www.linkedin.com/in/marek-krupski-441b8a15b" target="_blank"> <i class="contact__icon fab fa-linkedin"></i></a></li>
+
+                <li class="row-list-item"><a href="https://github.com/mKrupski" target="_blank"><i class="contact__icon fab fa-github-square"></i></a></li>
+
+                <li class="row-list-item"><a href="mailto:@marek.krupski@pollub.edu.pl"><i class="contact__icon fas fa-envelope-square"></i></a></li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <p class="footer__copy">
+            E-mail: marek.krupski@pollub.edu.pl | &copy;wszelkie prawa zastrzeżone.
+        </p>
+
+        <p class="footer__license ">Icons from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

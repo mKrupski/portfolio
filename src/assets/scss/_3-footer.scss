@@ -1,0 +1,14 @@
+.footer {
+    background-color: #121111;
+    color: #efefef;
+    font-size: 1.1rem;
+    padding: 1.5rem;
+
+    &__copy,
+    &__license {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+
+    }
+}
