@@ -138,7 +138,8 @@
                         <p class="card-text">Landing page dla zmyślonej firmy zajmującej się sprzedażą luksusowych domów. Projekt miał wykorzystywać możliwie najwięcej css grid w celu nauki RWD. Strona wykonana w ramach kursu "Advanced CSS Course" z Udemy.com.</p>
                     </div>
                     <div class="card-footer bg-transparent border-success text-success">
-                        <a href="https://github.com/mKrupski/nexter" target="_blank" class="btn btn--secondary">kod</a></div>
+                        <a href="https://github.com/mKrupski/nexter" target="_blank" class="btn btn--secondary">kod</a>
+                        <a href="https://mkrupski.github.io/nexter/dist/" target="_blank" class="btn btn--secondary">LIVE</a></div>
                 </div>
 
                 <div class="card">
@@ -155,20 +156,40 @@
             </div>
         </section>
 
-
         <section class="contact page-section" id="contact">
 
             <h2 class="heading-2 contact__header">Kontakt</h2>
             <hr class="horizontal-rule horizontal-rule__black">
 
-            <ul class="row-list socials">
-                <li class="row-list-item"> <a href="https://www.linkedin.com/in/marek-krupski-441b8a15b" target="_blank"> <i class="contact__icon fab fa-linkedin"></i></a></li>
+            <div class="wrapper row justify-content-center">
+                <div class="col-md-5">
+                    <form action="https://formspree.io/marek.krupski@pollub.edu.pl" method="POST">
+                        <div class="contact__form">
+                            <input type="hidden" name="_language" value="pl" />
+                            <input type="hidden" name="_format" value="plain" />
+                            <input type="hidden" name="_subject" value="Zainteresowany współpracą" />
+                            <input type="text" placeholder="Imię / nazwa firmy" name="name">
+                            <input type="text" placeholder="E-mail" name="_replyto">
+                            <textarea name="message" placeholder="Wiadomość.."></textarea>
+                            <button class="contact-button" type="submit">Wyślij</button>
+                        </div>
+                    </form>
+                </div>
 
-                <li class="row-list-item"><a href="https://github.com/mKrupski" target="_blank"><i class="contact__icon fab fa-github-square"></i></a></li>
 
-                <li class="row-list-item"><a href="mailto:@marek.krupski@pollub.edu.pl"><i class="contact__icon fas fa-envelope-square"></i></a></li>
-            </ul>
+                <div class="wrapper col-md-5">
+                    <span class="txt">Zajrzyj:</span>
+                    <ul class="row-list socials">
+                        <li class="row-list-item"> <a href="https://www.linkedin.com/in/marek-krupski-441b8a15b" target="_blank"> <i class="contact__icon fab fa-linkedin"></i></a></li>
 
+                        <li class="row-list-item"><a href="https://github.com/mKrupski" target="_blank"><i class="contact__icon fab fa-github-square"></i></a></li>
+
+                        <li class="row-list-item"><a href="mailto:@marek.krupski@pollub.edu.pl"><i class="contact__icon fas fa-envelope-square"></i></a></li>
+                    </ul>
+
+                    <span class="txt">Pobierz moje CV:<br><br><i class="fas fa-download"></i></span>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -181,9 +202,10 @@
 
         <p class="footer__license ">Icons from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
         </p>
-
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 
 </html>
