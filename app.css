@@ -3121,10 +3121,14 @@ textarea {
     border: 4px #5a1f90 solid;
     transition: 0.5s; }
 
-.fa-download:hover {
+.fa-download {
+   color: #000;
+   
+&:hover {
   color: #5a1f90;
   cursor: pointer;
   transition: 0.5s; }
+}
 
 .txt {
   font-size: 1.5rem;
