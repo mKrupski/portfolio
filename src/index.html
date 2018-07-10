@@ -163,14 +163,14 @@
 
             <div class="wrapper row justify-content-center">
                 <div class="col-md-5">
-                    <form action="https://formspree.io/marek.krupski@pollub.edu.pl" method="POST">
+                   <form id="contactForm" action="https://formspree.io/marek.krupski@pollub.edu.pl" method="POST">
                         <div class="contact__form">
                             <input type="hidden" name="_language" value="pl" />
                             <input type="hidden" name="_format" value="plain" />
                             <input type="hidden" name="_subject" value="Zainteresowany współpracą" />
-                            <input type="text" placeholder="Imię / nazwa firmy" name="name">
-                            <input type="text" placeholder="E-mail" name="_replyto">
-                            <textarea name="message" placeholder="Wiadomość.."></textarea>
+                            <input id="inputName" type="text" placeholder="Imię / nazwa firmy" name="name">
+                            <input id="inputEmail" type="text" placeholder="E-mail" name="_replyto">
+                            <textarea id="inputMessage" name="message" placeholder="Wiadomość.."></textarea>
                             <button class="contact-button" type="submit">Wyślij</button>
                         </div>
                     </form>
@@ -204,6 +204,7 @@
         </p>
     </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
