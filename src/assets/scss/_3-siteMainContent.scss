@@ -185,8 +185,9 @@
 
 
 
-input, textarea {
-    color: #000000;
+#inputName, #inputEmail, #inputMessage {
+    color: #000000 !important;
+    font-size: 1.2rem !important;
     width: 100%;
     margin: 1.2rem 0;
     border: none;
@@ -276,4 +277,10 @@ textarea {
 
 .socials li {
     display: inline-block;
+}
+
+.text-error {
+    color: red !important;
+    font-size: 1rem;
+    display: block;
 }
